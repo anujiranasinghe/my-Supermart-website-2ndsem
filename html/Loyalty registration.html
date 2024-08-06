@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERmart - Loyalty Registration</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="#">Product Page</a>
+                    <ul class="sub-menu">
+                        <li><a href="dairy.html">Dairy Products</a></li>
+                        <li><a href="vegetables.html">Vegetables</a></li>
+                        <li><a href="Cosmetics&Beauty.html">Cosmetics/Beauty</a></li>
+                    </ul>
+                </li>
+                <li><a href="order.html">Order Page</a></li>
+                <li><a href="Loyalty registration.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="benifitsheading">Loyalty Scheme Benefits:</h2>
+    <div id="benefits"> <!--Intro about types of benifits-->
+        <div class="benefits-column">
+            <div class="basic_benefits">
+                <p>Basic benefits include:</p>
+                <ul>
+                    <li>Points on every purchase</li>
+                    <li>Special discounts</li>
+                    <li>Priority customer service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefits-column">
+            <div class="silver_benefits">
+                <p>Silver benefits include:</p>
+                <ul>
+                    <li>Increased points accumulation</li>
+                    <li>Exclusive offers</li>
+                    <li>Priority customer service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefits-column">
+            <div class="gold_benefits">
+                <p>Gold benefits include:</p>
+                <ul>
+                    <li>High points accumulation</li>
+                    <li>Reserved Parking Area</li>
+                    <li>Personal shopper</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <main class="LR"> <!--Form to register for the loyalty program-->
+        <form action="#" method="POST" class="registration-form" onsubmit="return confirm('Thank you for registering for our loyalty program!');">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+    
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" required></textarea><br><br>
+    
+            <label for="loyalty_scheme">Choose Loyalty Scheme:</label><br>
+            <select id="loyalty_scheme" name="loyalty_scheme" required>
+                <option value="basic">Basic</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+            </select>
+    
+            <input type="submit" value="Register">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 SUPERmart. All rights reserved.</p>
+    </footer>
+</body>
+</html>

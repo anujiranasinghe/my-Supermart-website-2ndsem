@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERmart - Order</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="#">Product Page</a>
+                    <ul class="sub-menu">
+                        <li><a href="dairy.html">Dairy Products</a></li>
+                        <li><a href="vegetables.html">Vegetables</a></li>
+                        <li><a href="Cosmetics&Beauty.html">Cosmetics/Beauty</a></li>
+                    </ul>
+                </li>
+                <li><a href="order.html">Order Page</a></li>
+                <li><a href="Loyalty registration.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="order-header">
+        <h1>Order Now...</h1>
+    </section>
+
+    <div class="img-buttons">
+        <a href="#fruits"><img src="../images/fruitsfororder.jpg" alt="Fruits"></a>
+        <a href="#vegetables"><img src="../images/vegfororder.jpg" alt="Vegetables"></a>
+        <a href="#meat-seafood"><img src="../images/meatfororder.jpg" alt="Meat and Seafood"></a>
+        <a href="#dairy"><img src="../images/dairyfororder.jpg" alt="Dairy Products"></a>
+        <a href="#baking-cooking"><img src="../images/bakingfororder.jpg" alt="Baking and Cooking Ingredients"></a>
+    </div>
+
+    <main>
+        <fieldset id="fruits" class="order_form_fields">
+            <legend>FRUITS</legend>
+            <form action="/submit-fruits" method="POST">
+                <div class="item">
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/fruits-apple.jpg" alt="Apple">
+                            <input type="checkbox" id="apple" name="fruit" value="apple">
+                            <label for="apple">Apple (Rs300.00)</label>
+                            <input type="number" id="apple-qty" name="apple-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/fruits-banana.jpg" alt="Banana">
+                            <input type="checkbox" id="banana" name="fruit" value="banana">
+                            <label for="banana">Banana (Rs200.00)</label>
+                            <input type="number" id="banana-qty" name="banana-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/fruits-orange.jpg" alt="Orange">
+                            <input type="checkbox" id="orange" name="fruit" value="orange">
+                            <label for="orange">Orange (Rs300.00)</label>
+                            <input type="number" id="orange-qty" name="orange-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/fruits-avocado.jpg" alt="Avocado">
+                            <input type="checkbox" id="avocado" name="fruit" value="avocado">
+                            <label for="avocado">Avocado (Rs400.00)</label>
+                            <input type="number" id="avocado-qty" name="avocado-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/fruits-grapes.jpg" alt="Grape">
+                            <input type="checkbox" id="grape" name="fruit" value="grape">
+                            <label for="grape">Grape (Rs500.00)</label>
+                            <input type="number" id="grape-qty" name="grape-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/fruits-papaya.jpg" alt="Papaya">
+                            <input type="checkbox" id="papaya" name="fruit" value="papaya">
+                            <label for="papaya">Papaya (Rs300.00)</label>
+                            <input type="number" id="papaya-qty" name="papaya-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+        
+        <fieldset id="vegetables" class="order_form_fields">
+            <legend>VEGETABLES</legend>
+            <form action="/submit-vegetables" method="POST">
+                <div class="item">
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/veg_carrot.jpg" alt="Carrot">
+                            <input type="checkbox" id="carrot" name="vegetable" value="carrot">
+                            <label for="carrot">Carrot (Rs270.00)</label>
+                            <input type="number" id="carrot-qty" name="carrot-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/veg_onions.jpg" alt="Onion">
+                            <input type="checkbox" id="onion" name="vegetable" value="onion">
+                            <label for="onion">Onion (Rs420.00)</label>
+                            <input type="number" id="onion-qty" name="onion-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/veg_potato.jpg" alt="Potato">
+                            <input type="checkbox" id="potato" name="vegetable" value="potato">
+                            <label for="potato">Potato (Rs350.00)</label>
+                            <input type="number" id="potato-qty" name="potato-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/veg_pumpkin.jpg" alt="Pumpkin">
+                            <input type="checkbox" id="pumpkin" name="vegetable" value="pumpkin">
+                            <label for="pumpkin">Pumpkin (Rs300.00)</label>
+                            <input type="number" id="pumpkin-qty" name="pumpkin-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/veg_broccoli.jpg" alt="Broccoli">
+                            <input type="checkbox" id="broccoli" name="vegetable" value="broccoli">
+                            <label for="broccoli">Broccoli (Rs1220.00)</label>
+                            <input type="number" id="broccoli-qty" name="broccoli-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/veg_beetroot.jpg" alt="Beetroot">
+                            <input type="checkbox" id="beetroot" name="vegetable" value="beetroot">
+                            <label for="beetroot">Beetroot (Rs270.00)</label>
+                            <input type="number" id="beetroot-qty" name="beetroot-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+        
+        <fieldset id="meat-seafood" class="order_form_fields">
+            <legend>MEAT AND SEAFOOD</legend>
+            <form action="/submit-meat-seafood" method="POST">
+                <div class="item">
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/meet-chicken.jpg" alt="Chicken">
+                            <input type="checkbox" id="chicken" name="meat" value="chicken">
+                            <label for="chicken">Chicken (Rs500.00)</label>
+                            <input type="number" id="chicken-qty" name="chicken-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/meet-pork.jpg" alt="Pork">
+                            <input type="checkbox" id="pork" name="meat" value="pork">
+                            <label for="pork">Pork (Rs800.00)</label>
+                            <input type="number" id="pork-qty" name="pork-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/meat-beef.jpg" alt="Beef">
+                            <input type="checkbox" id="beef" name="meat" value="beef">
+                            <label for="beef">Beef (Rs900.00)</label>
+                            <input type="number" id="beef-qty" name="beef-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/meat-fish.jpg" alt="Fish">
+                            <input type="checkbox" id="fish" name="seafood" value="fish">
+                            <label for="fish">Fish (Rs300.00)</label>
+                            <input type="number" id="fish-qty" name="fish-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/meat-prawns.jpg" alt="Prawns">
+                            <input type="checkbox" id="prawns" name="seafood" value="prawns">
+                            <label for="prawns">Prawns (Rs1000.00)</label>
+                            <input type="number" id="prawns-qty" name="prawns-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/meat-squid.jpg" alt="Squid">
+                            <input type="checkbox" id="squid" name="seafood" value="squid">
+                            <label for="squid">Squid (Rs1200.00)</label>
+                            <input type="number" id="squid-qty" name="squid-qty" placeholder="Quantity(kg)">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+
+        <fieldset id="dairy" class="order_form_fields">
+            <legend>DAIRY PRODUCTS</legend>
+            <form action="/submit-dairy-products" method="POST">
+                <div class="item">
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/dairy_chocomilk.jpg" alt="Chocolate Milk">
+                            <input type="checkbox" id="chocolate-milk" name="dairy" value="chocolate-milk">
+                            <label for="chocolate-milk">Chocolate Milk (Rs600.00)</label>
+                            <input type="number" id="chocolate-milk-qty" name="chocolate-milk-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/dairy_vanilamilk.jpg" alt="Vanilla Milk">
+                            <input type="checkbox" id="vanilla-milk" name="dairy" value="vanilla-milk">
+                            <label for="vanilla-milk">Vanilla Milk (Rs600.00)</label>
+                            <input type="number" id="vanilla-milk-qty" name="vanilla-milk-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/dairy_yogurt.jpg" alt="Yogurt">
+                            <input type="checkbox" id="yogurt" name="dairy" value="yogurt">
+                            <label for="yogurt">Yogurt (Rs80.00)</label>
+                            <input type="number" id="yogurt-qty" name="yogurt-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/dairy_curd.jpg" alt="Curd">
+                            <input type="checkbox" id="curd" name="dairy" value="curd">
+                            <label for="curd">Curd (Rs650.00)</label>
+                            <input type="number" id="curd-qty" name="curd-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/dairy_cheese wedges.jpg" alt="Cheese Wedges">
+                            <input type="checkbox" id="cheese-wedges" name="dairy" value="cheese-wedges">
+                            <label for="cheese-wedges">Cheese Wedges (Rs560.00)</label>
+                            <input type="number" id="cheese-wedges-qty" name="cheese-wedges-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/dairy_butter.jpg" alt="Butter">
+                            <input type="checkbox" id="butter" name="dairy" value="butter">
+                            <label for="butter">Butter (Rs880.00)</label>
+                            <input type="number" id="butter-qty" name="butter-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+        
+        <fieldset id="baking-cooking" class="order_form_fields">
+            <legend>BAKING AND COOKING INGREDIENTS</legend>
+            <form action="/submit-baking-cooking" method="POST">
+                <div class="item">
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/baking-milkmaid.jpg" alt="Milkmaid">
+                            <input type="checkbox" id="milkmaid" name="baking" value="milkmaid">
+                            <label for="milkmaid">Milkmaid (Rs650.00)</label>
+                            <input type="number" id="milkmaid-qty" name="milkmaid-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/baking-flour.jpg" alt="Flour">
+                            <input type="checkbox" id="flour" name="baking" value="flour">
+                            <label for="flour">Flour (Rs300.00)</label>
+                            <input type="number" id="flour-qty" name="flour-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/baking-salt.jpg" alt="Salt">
+                            <input type="checkbox" id="salt" name="baking" value="salt">
+                            <label for="salt">Salt (Rs150.00)</label>
+                            <input type="number" id="salt-qty" name="salt-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/baking-oil.jpg" alt="Oil">
+                            <input type="checkbox" id="oil" name="baking" value="oil">
+                            <label for="oil">Oil (Rs500.00)</label>
+                            <input type="number" id="oil-qty" name="oil-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/baking-seasoning cube.jpg" alt="Seasoning Cube">
+                            <input type="checkbox" id="seasoning-cube" name="baking" value="seasoning-cube">
+                            <label for="seasoning-cube">Seasoning Cube (Rs100.00)</label>
+                            <input type="number" id="seasoning-cube-qty" name="seasoning-cube-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="orderform-item">
+                        <div class="content">
+                            <img src="../images/baking-vinegar.jpg" alt="Vinegar">
+                            <input type="checkbox" id="vinegar" name="baking" value="vinegar">
+                            <label for="vinegar">Vinegar (Rs300.00)</label>
+                            <input type="number" id="vinegar-qty" name="vinegar-qty" placeholder="Quantity">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+
+        <h2 class="cart-heading">Cart</h2>
+        <table id="cart">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be  added here -->
+            </tbody>
+        </table>
+    
+        <div class="cart-buttons">
+            <button type="button" onclick="location.href='checkout.html';">Buy Now</button>
+            <button type="button" id="add-to-favorites">Add to Favorites</button>
+            <button type="button" id="apply-favorites">Apply Favorites</button>
+        </div>
+    
+    
+        </main>
+        <footer>
+            <p>&copy; 2024 SUPERmart. All rights reserved.</p>
+        </footer>
+    
+        <script src="../javascript/order.js"></script>
+    </body>
+    </html>
+    

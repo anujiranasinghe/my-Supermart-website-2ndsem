@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERmart - Checkout</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="#">Product Page</a>
+                    <ul class="sub-menu">
+                        <li><a href="dairy.html">Dairy Products</a></li>
+                        <li><a href="vegetables.html">Vegetables</a></li>
+                        <li><a href="Cosmetics&Beauty.html">Cosmetics/Beauty</a></li>
+                    </ul>
+                </li>
+                <li><a href="order.html">Order Page</a></li>
+                <li><a href="Loyalty registration.html">Loyalty Registration</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="CO">
+        <h1>CHECKOUT</h1>
+
+        <div class="form-row">
+            <!-- personal details -->
+            <fieldset class="checkout-form">
+                <legend>PERSONAL DETAILS</legend>
+                <form id="PersonalInfo">
+                    <label for="Fname">First Name:</label>
+                    <input type="text" id="Fname" name="Fname" required>
+                    <span id="FnameError" class="error-message">Required</span>
+                    <br><br>
+        
+                    <label for="Lname">Last Name:</label>
+                    <input type="text" id="Lname" name="Lname" required>
+                    <span id="LnameError" class="error-message">Required</span>
+                    <br><br>
+        
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error-message">Required</span>
+                    <br><br>
+        
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                    <span id="phoneError" class="error-message">Required</span>
+                    <br><br>
+        
+                    <input type="reset" value="Reset" class="reset">
+                </form>
+            </fieldset>
+
+            <!-- shipping details -->
+            <fieldset class="checkout-form">
+                <legend>DELIVERY DETAILS</legend>
+                <form id="ShippingInfo">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                    <span id="addressError" class="error-message">Required</span><br><br>
+        
+                    <label for="city">Town/City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <span id="cityError" class="error-message">Required</span><br><br>
+                
+                    <label for="country">State/Country:</label>
+                    <input type="text" id="country" name="country" required>
+                    <span id="countryError" class="error-message">Required</span><br><br>
+        
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip" required>
+                    <span id="zipError" class="error-message">Required</span><br><br>
+                    
+                    <input type="reset" value="Reset" class="reset">
+                </form>
+            </fieldset>
+        </div>
+
+        <div class="form-row">
+            <!-- card details -->
+            <fieldset class="checkout-form">
+                <legend>PAYMENT DETAILS</legend>
+                <form id="CardInfo">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                    <span id="cardNumberError" class="error-message">Required</span><br><br>
+              
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                    <span id="expiryError" class="error-message">Required</span><br><br>
+        
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" minlength="3" required>
+                    <span id="cvvError" class="error-message">Required</span><br><br>
+        
+                    <input type="reset" value="Reset" class="reset">
+                </form>
+            </fieldset>
+
+            <!-- loyalty details -->
+            <fieldset class="checkout-form">
+                <legend>LOYALTY CARD DETAILS</legend>
+                <form id="LoyaltyCardInfo">
+                    <label for="loyalty_scheme">Loyalty Scheme:</label>
+                    <div class="loyalty-options">
+                        <select id="loyalty_scheme" name="loyalty_scheme" >
+                            <option value="basic">Basic</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                        <span id="loyalty-no-Error" class="error-message"></span>
+                    </div><br>
+            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span id="loyalty-name-Error" class="error-message"></span><br><br>
+            
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" >
+                    <span id="loyalty-name-Error" class="error-message"></span><br><br>
+
+                    <input type="reset" value="Reset" class="reset">
+                </form>
+            </fieldset>
+        </div>
+        
+        <!-- submit button -->
+        <fieldset class="checkout-form-submit-field">
+            <button id="checkout-submit-btn" class="checkout-submit-btn" type="submit" onclick="return validateCheckoutForm()">Pay</button>
+        </fieldset>
+    </div>
+    <script src="../javascript/order.js"></script>
+</body>
+</html>
